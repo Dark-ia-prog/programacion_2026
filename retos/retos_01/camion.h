@@ -9,7 +9,7 @@ private:
     double capacidadCarga;
 
 public:
-    Camion(string marca, string modelo, string placa, double capacidadCarga);
+    Camion(string marca, string modelo, string placa, double capacidadCarga, int anio);
 
     void mostrarInfo() const override;
 };
