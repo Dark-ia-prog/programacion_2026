@@ -9,7 +9,7 @@ private:
     int numeroPasajeros;
 
 public:
-    Autobus(string marca, string modelo, string placa, int numeroPasajeros);
+    Autobus(string marca, string modelo, string placa, int numeroPasajeros, int anio);
 
     void mostrarInfo() const override;
 };
