@@ -1,6 +1,6 @@
 #include "autobus.h"
 
-Autobus::Autobus(string marca, string modelo, string placa, int numeroPasajeros)
+Autobus::Autobus(string marca, string modelo, string placa, int numeroPasajeros, int anio)
     : Vehiculo(marca, modelo, placa), numeroPasajeros(numeroPasajeros) {}
 
 void Autobus::mostrarInfo() const
