@@ -9,7 +9,7 @@ private:
     int cilindrada;
 
 public:
-    Moto(string marca, string modelo, string placa, int cilindrada);
+    Moto(string marca, string modelo, string placa, int cilindrada, int anio);
 
     void mostrarInfo() const override;
 };
