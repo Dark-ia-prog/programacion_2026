@@ -19,7 +19,7 @@ public:
 
     // Métodos
     void setPlaca(string nuevaplaca);
-    virtual void mostrarInformacion() const;
+    virtual void mostrarInfo() const;
     virtual ~Vehiculo();
 };
 
