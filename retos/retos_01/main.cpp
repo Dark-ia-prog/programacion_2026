@@ -11,7 +11,7 @@ int main()
      // Crear objetos
      Moto moto1("Yamaha", "R3", "ABC123", 300, 2025);
      Camion camion1("Volvo", "FH16", "XYZ789", 20.5, 2012);
-     Autobus autobus1("Mercedes", "Sprinter NCV3", "LMN456", 25,2008);
+     Autobus autobus1("Mercedes", "Sprinter", "LMN456", 25,2008);
 
      cout << "\nINFORMACION INICIAL\n"
           << endl;
