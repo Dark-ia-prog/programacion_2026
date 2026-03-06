@@ -25,7 +25,8 @@ int main()
      // Cambiar placas
      moto1.setPlaca("NUEVA111");
      camion1.setPlaca("NUEVA222");
-
+     autobus1.setPlaca("NUEVA333");
+     
      cout << "\nINFORMACION DESPUES DE CAMBIAR PLACAS\n"
           << endl;
      moto1.mostrarInfo();
