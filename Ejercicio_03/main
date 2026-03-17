@@ -1,0 +1,69 @@
+#include "Figura.h"
+#include "Rombo.h"
+#include "Cuadrado.h"
+#include "Circulo.h"
+#include "Triangulo.h"
+#include "Pentagono.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    cout << "=== Ejemplo de Polimorfismo: Figura, Rombo, Cuadrado, Circulo, Triangulo, Pentagono ===" << endl;
+    cout << endl;
+
+    Figura* figura1 = new Rombo();
+    Figura* figura2 = new Cuadrado();
+    Figura* figura3 = new Circulo();
+    Figura* figura4 = new Triangulo();
+    Figura* figura5 = new Pentagono();
+
+    cout << "--- Llamadas polimorficas a traves de Figura* ---" << endl;
+    cout << endl;
+
+    cout << "Figura1 (Rombo):" << endl;
+    figura1->getArea();
+    cout << endl;
+
+    cout << "Figura2 (Cuadrado):" << endl;
+    figura2->getArea();
+    cout << endl;
+
+    cout << "Figura3 (Circulo):" << endl;
+    figura3->getArea();
+    cout << endl;
+
+    cout << "Figura4 (Triangulo):" << endl;
+    figura4->getArea();
+    cout << endl;
+
+    cout << "Figura5 (Pentagono):" << endl;
+    figura5->getArea();
+    cout << endl;
+
+    cout << "--- Uso de referencia a la base ---" << endl;
+
+    Rombo rombo;
+    Figura& refigura = rombo;
+
+    refigura.describir();
+    refigura.hacerimagen();
+
+    cout << endl;
+
+    cout << "Figura 1: " << figura1->getArea() << endl;
+    cout << "Figura 2: " << figura2->getArea() << endl;
+    cout << "Figura 3: " << figura3->getArea() << endl;
+    cout << "Figura 4: " << figura4->getArea() << endl;
+    cout << "Figura 5: " << figura5->getArea() << endl;
+
+    delete figura1;
+    delete figura2;
+    delete figura3;
+    delete figura4;
+    delete figura5;
+
+    return 0;
+}
+
